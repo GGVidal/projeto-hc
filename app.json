@@ -1,0 +1,15 @@
+{
+  "expo": {
+    "name": "projeto-hc",
+    "slug": "projeto-hc",
+    "version": "1.0.0",
+    "sdkVersion": "44.0.0",
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "ios": {
+      "bundleIdentifier": "projeto-hc"
+    }
+  }
+}
