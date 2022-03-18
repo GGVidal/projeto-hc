@@ -72,7 +72,7 @@ function App() {
   );
 
   return (
-    <SafeAreaView>
+    <SafeAreaView style={{ backgroundColor: "#E4E4E4" }}>
       <View>
         <AddTaskForm onSubmit={handleAddTask} />
       </View>
