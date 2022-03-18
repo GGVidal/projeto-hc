@@ -72,18 +72,9 @@ function App() {
   );
 
   return (
-    <SafeAreaView style={styles.screen}>
-      <View style={styles.content}>
+    <SafeAreaView>
+      <View>
         <AddTaskForm onSubmit={handleAddTask} />
-        {tasks.length === 0 ? (
-          <IntroText />
-        ) : (
-          <TaskList
-            tasks={tasks}
-            onToggleTaskStatus={handleToggleTaskStatus}
-            onDeleteTask={handleDeleteTask}
-          />
-        )}
       </View>
     </SafeAreaView>
   );
