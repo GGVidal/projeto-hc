@@ -1,15 +1,7 @@
 import { useState } from "react";
-import {
-  View,
-  Text,
-  TextInput,
-  Pressable,
-  Platform,
-  StyleSheet,
-} from "react-native";
-import { TractorListHeader } from "./TractorListHeader";
-import { TractorListItem } from "./TractorListItem";
 
+import { TractorListItem } from "./TractorListItem";
+import { TractorList } from "./TractorList";
 interface AddTaskFormProps {
   onSubmit: (description: string) => void;
 }
@@ -24,9 +16,9 @@ function AddTaskForm({ onSubmit }: AddTaskFormProps) {
 
   return (
     <>
-      <TractorListHeader />
-      <TractorListItem />
-      <TractorListItem />
+      <TractorList />
+      {/* <TractorListItem />
+      <TractorListItem /> */}
     </>
   );
 }
