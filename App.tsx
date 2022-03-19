@@ -3,7 +3,7 @@ import { SafeAreaView, View, StyleSheet } from "react-native";
 
 import TaskContext, { Task } from "./app/models/Task";
 import IntroText from "./app/components/IntroText";
-import AddTaskForm from "./app/components/AddTaskForm";
+import AddTaskForm from "./app/screens/AddTaskForm";
 import TaskList from "./app/components/TaskList";
 import colors from "./app/styles/colors";
 
@@ -72,25 +72,13 @@ function App() {
   );
 
   return (
-    <SafeAreaView style={{ backgroundColor: "#E4E4E4" }}>
-      <View>
+    <SafeAreaView>
+      <View style={{ backgroundColor: "#E4E4E4" }}>
         <AddTaskForm onSubmit={handleAddTask} />
       </View>
     </SafeAreaView>
   );
 }
-
-const styles = StyleSheet.create({
-  screen: {
-    flex: 1,
-    backgroundColor: colors.darkBlue,
-  },
-  content: {
-    flex: 1,
-    paddingTop: 20,
-    paddingHorizontal: 20,
-  },
-});
 
 function AppWrapper() {
   if (!RealmProvider) {
