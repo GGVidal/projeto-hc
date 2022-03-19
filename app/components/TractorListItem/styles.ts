@@ -1,7 +1,7 @@
 import styled from "styled-components/native";
 
 export const Container = styled.View`
-  margin-top: 41px;
+  margin-bottom: 15px;
 `;
 
 export const ListItemContainer = styled.View`
@@ -18,7 +18,7 @@ export const IconContainer = styled.View`
   background: #d3e0f4 0% 0% no-repeat padding-box;
   border-radius: 12px;
   opacity: 1;
-  margin: 15px 15px 15px 10px;
+  margin: 15px 10px 15px 15px;
   width: 68px;
   height: 68px;
 `;
@@ -27,23 +27,22 @@ export const StyledIcon = styled.View`
   margin: 15.89px 15.94px 12.95px 13.97px;
 `;
 
-export const TextChip = styled.Text`
-  font-size: 24px;
-  font-weight: 600;
-  align-self: center;
-  letter-spacing: 0.7px;
-  color: white;
+export const DescriptionContainer = styled.View`
   opacity: 1;
-  text-transform: uppercase;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  flex-direction: column;
+  justify-content: space-around;
 `;
 
-export const Title = styled.Text`
-  font-size: 30px;
-  text-align: left;
-  letter-spacing: 0.6px;
-  color: #fff;
-  opacity: 1;
-  margin-left: 15px;
-  margin-bottom: 15px;
-  margin-top: 21px;
+export const StatusContainer = styled.View`
+  flex-direction: row;
+`;
+
+export const SquareShape = styled.View`
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+  border-radius: 4px;
+  background: #feca57 0% 0% no-repeat padding-box;
 `;

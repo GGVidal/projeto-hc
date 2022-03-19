@@ -7,6 +7,7 @@ export const Text: FC<TextProps> = ({
   fontSize,
   fontWeight,
   letterSpacing,
+  children,
 }) => {
   return (
     <StyledText
@@ -14,6 +15,8 @@ export const Text: FC<TextProps> = ({
       fontSize={fontSize}
       fontWeight={fontWeight}
       letterSpacing={letterSpacing}
-    />
+    >
+      {children}
+    </StyledText>
   );
 };

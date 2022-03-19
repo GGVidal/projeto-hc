@@ -26,6 +26,7 @@ function AddTaskForm({ onSubmit }: AddTaskFormProps) {
     <>
       <TractorListHeader />
       <TractorListItem />
+      <TractorListItem />
     </>
   );
 }
