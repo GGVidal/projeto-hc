@@ -67,7 +67,7 @@ export const AddTractor: FC = () => {
         <Input />
       </FieldContainer>
       <ButtonsContainer>
-        <Button color="#ABB3BD">
+        <Button borderRadius="28px" width="166px" height="56px" color="#ABB3BD">
           <Text
             color="#FFFFFF"
             letterSpacing="1.62px"
@@ -77,7 +77,7 @@ export const AddTractor: FC = () => {
             CANCEL
           </Text>
         </Button>
-        <Button color="#52C782">
+        <Button borderRadius="28px" width="166px" height="56px" color="#52C782">
           <Text
             color="#FFFFFF"
             letterSpacing="1.62px"
