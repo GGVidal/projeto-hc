@@ -5,6 +5,7 @@ import { Text } from "../../components/Text";
 import { TractorListHeader } from "../../components/TractorListHeader";
 import { TractorListItem } from "../../components/TractorListItem";
 import { SubHeaderContainer } from "./styles";
+import Add from "../../assets/add.svg";
 
 export const TractorList: FC = () => {
   return (
@@ -32,7 +33,9 @@ export const TractorList: FC = () => {
         <TractorListItem />
         <TractorListItem />
       </SafeAreaView>
-      <FAB />
+      <FAB>
+        <Add width={18} height={18} />
+      </FAB>
     </>
   );
 };

@@ -8,4 +8,6 @@ export const FABContainer = styled.Pressable`
   right: 30px;
   bottom: 30px;
   border-radius: 100px;
+  align-items: center;
+  justify-content: center;
 `;
