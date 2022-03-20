@@ -3,11 +3,12 @@ import {
   HeaderContainer,
   IconContainer,
   ChipContainer,
-  TextChip,
   Title,
   ButtonsContainer,
 } from "./styles";
-import Camera from "../../assets/Camera.svg";
+import Filter from "../../assets/filter.svg";
+import { Text } from "../Text";
+import { View } from "react-native";
 
 export const TractorListHeader: FC = () => {
   return (
@@ -15,10 +16,19 @@ export const TractorListHeader: FC = () => {
       <HeaderContainer>
         <ButtonsContainer>
           <IconContainer>
-            <Camera width={36} height={36} />
+            <View>
+              <Filter width={18} height={18} />
+            </View>
           </IconContainer>
-          <ChipContainer>
-            <TextChip>Teste</TextChip>
+          <ChipContainer needsOffscreenAlphaCompositing>
+            <Text
+              fontSize="14px"
+              fontWeight="600"
+              color="#FFFFFF"
+              letterSpacing="0.7px"
+            >
+              SORT BY: NAME
+            </Text>
           </ChipContainer>
         </ButtonsContainer>
         <Title>Tractor inspection</Title>

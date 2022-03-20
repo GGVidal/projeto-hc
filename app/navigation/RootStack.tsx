@@ -10,7 +10,7 @@ export const RootStackRoutes: FC = () => {
     <NavigationContainer>
       <Stack.Navigator initialRouteName="TractorList">
         <Stack.Screen
-          options={{ headerLeft: () => null }}
+          options={{ header: () => null }}
           name="TractorList"
           component={TractorList}
         />

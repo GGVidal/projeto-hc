@@ -1,7 +1,7 @@
 import styled from "styled-components/native";
 
 export const HeaderContainer = styled.View`
-  background: #1157b9 0% 0% no-repeat padding-box;
+  background-color: #1157b9;
   width: 100%;
   height: 120px;
 `;
@@ -13,33 +13,25 @@ export const ButtonsContainer = styled.View`
 
 export const IconContainer = styled.Pressable`
   border-radius: 10px;
-  opacity: 0.2;
   width: 36px;
   height: 36px;
-  background: #ffffff 0% 0% no-repeat padding-box;
+  background-color: rgba(255, 255, 255, 0.2);
   margin-top: 11px;
   margin-left: 15px;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const ChipContainer = styled.Pressable`
   width: 141px;
   height: 36px;
   border-radius: 10px;
-  background: #ffffff 0% 0% no-repeat padding-box;
+  background-color: rgba(255, 255, 255, 0.2);
   text-align: left;
-  opacity: 0.2;
   margin-right: 15px;
   margin-top: 11px;
-`;
-
-export const TextChip = styled.Text`
-  font-size: 24px;
-  font-weight: 600;
-  align-self: center;
-  letter-spacing: 0.7px;
-  color: white;
-  opacity: 1;
-  text-transform: uppercase;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const Title = styled.Text`
