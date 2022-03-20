@@ -1,7 +1,7 @@
 import React, { FC } from "react";
-import { Text } from "../Text";
-import { TractorListHeader } from "../TractorListHeader";
-import { TractorListItem } from "../TractorListItem";
+import { Text } from "../../components/Text";
+import { TractorListHeader } from "../../components/TractorListHeader";
+import { TractorListItem } from "../../components/TractorListItem";
 import { SubHeaderContainer } from "./styles";
 
 export const TractorList: FC = () => {

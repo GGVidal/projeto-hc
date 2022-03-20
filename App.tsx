@@ -6,6 +6,7 @@ import IntroText from "./app/components/IntroText";
 import AddTaskForm from "./app/screens/AddTaskForm";
 import TaskList from "./app/components/TaskList";
 import colors from "./app/styles/colors";
+import { RootStackRoutes } from "./app/navigation";
 
 const { useRealm, useQuery, RealmProvider } = TaskContext;
 
@@ -86,7 +87,7 @@ function AppWrapper() {
   }
   return (
     <RealmProvider>
-      <App />
+      <RootStackRoutes />
     </RealmProvider>
   );
 }
