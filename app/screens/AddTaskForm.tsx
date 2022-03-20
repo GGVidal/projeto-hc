@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 import { TractorListItem } from "../components/TractorListItem";
-import { TractorList } from "../components/TractorList";
+import { TractorList } from "./TractorList";
 import { Input } from "../components/Input";
 import { AddTractor } from "./AddTractor";
 import { AddInspector } from "./AddInspector";
