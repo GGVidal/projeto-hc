@@ -4,6 +4,7 @@ import { TractorListItem } from "../components/TractorListItem";
 import { TractorList } from "../components/TractorList";
 import { Input } from "../components/Input";
 import { AddTractor } from "./AddTractor";
+import { AddInspector } from "./AddInspector";
 interface AddTaskFormProps {
   onSubmit: (description: string) => void;
 }
@@ -18,7 +19,7 @@ function AddTaskForm({ onSubmit }: AddTaskFormProps) {
 
   return (
     <>
-      <AddTractor />
+      <AddInspector />
       {/* <TractorListItem />
       <TractorListItem /> */}
     </>
