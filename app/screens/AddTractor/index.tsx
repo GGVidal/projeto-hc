@@ -2,7 +2,11 @@ import React, { FC } from "react";
 import { Button } from "../../components/Button";
 import { Input } from "../../components/Input";
 import { Text } from "../../components/Text";
-import { AddTractorContainer, FieldContainer } from "./styles";
+import {
+  AddTractorContainer,
+  ButtonsContainer,
+  FieldContainer,
+} from "./styles";
 
 export const AddTractor: FC = () => {
   return (
@@ -62,16 +66,28 @@ export const AddTractor: FC = () => {
         </Text>
         <Input />
       </FieldContainer>
-      <Button color="#ABB3BD">
-        <Text
-          color="#FFFFFF"
-          letterSpacing="1.62px"
-          fontWeight="600"
-          fontSize="18px"
-        >
-          CANCEL
-        </Text>
-      </Button>
+      <ButtonsContainer>
+        <Button color="#ABB3BD">
+          <Text
+            color="#FFFFFF"
+            letterSpacing="1.62px"
+            fontWeight="600"
+            fontSize="18px"
+          >
+            CANCEL
+          </Text>
+        </Button>
+        <Button color="#52C782">
+          <Text
+            color="#FFFFFF"
+            letterSpacing="1.62px"
+            fontWeight="600"
+            fontSize="18px"
+          >
+            SAVE
+          </Text>
+        </Button>
+      </ButtonsContainer>
     </AddTractorContainer>
   );
 };

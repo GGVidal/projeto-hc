@@ -6,7 +6,6 @@ export const StyledButton = styled.Pressable<ButtonProps>`
   width: 166px;
   height: 56px;
   background-color: ${({ color }) => color};
-  padding: 17px 40px;
+  justify-content: center;
+  align-items: center;
 `;
-
-export const StyledText = styled.View``;
