@@ -1,7 +1,7 @@
 Steps to run the project:
 
 1. Install dependencies
-# yarn
+ yarn
 
 2. Run the project
-# yarn ios or yarn android
+ yarn ios or yarn android
