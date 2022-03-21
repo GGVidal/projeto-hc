@@ -1,3 +1,4 @@
+import { useNavigation } from "@react-navigation/native";
 import React, { FC } from "react";
 import { Button } from "../../../../components/Button";
 import { Text } from "../../../../components/Text";
@@ -5,10 +6,17 @@ import { InspectionItem } from "../InspectionItem";
 import { ButtonsContainer, InspectionContainer } from "./styles";
 
 export const InspectionList: FC = () => {
+  const { navigate } = useNavigation();
   return (
     <InspectionContainer>
       <ButtonsContainer>
-        <Button height="36px" width="198px" borderRadius="18px" color="#2F3542">
+        <Button
+          height="36px"
+          width="198px"
+          borderRadius="18px"
+          color="#2F3542"
+          onPress={() => navigate("AddInspection")}
+        >
           <Text
             color="#FFF"
             letterSpacing="0.7px"
@@ -19,6 +27,9 @@ export const InspectionList: FC = () => {
           </Text>
         </Button>
       </ButtonsContainer>
+      <InspectionItem />
+      <InspectionItem />
+      <InspectionItem />
       <InspectionItem />
     </InspectionContainer>
   );

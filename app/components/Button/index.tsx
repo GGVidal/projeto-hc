@@ -8,10 +8,12 @@ export const Button: FC<ButtonProps> = ({
   borderRadius,
   width,
   height,
+  onPress,
 }) => {
   return (
     <StyledButton
       borderRadius={borderRadius}
+      onPress={onPress}
       width={width}
       height={height}
       color={color}
