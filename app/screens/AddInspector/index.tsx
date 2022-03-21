@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React, { FC, useLayoutEffect } from "react";
 import { Button } from "../../components/Button";
 import { Input } from "../../components/Input";
 import { Text } from "../../components/Text";
@@ -10,8 +10,21 @@ import {
   SaveContainer,
 } from "./styles";
 import Camera from "../../assets/Camera.svg";
+import { useNavigation } from "@react-navigation/native";
+import { IconContainer as HeaderContainer } from "../../navigation/styles";
+import Back from "../../assets/arrow_left.svg";
 
 export const AddInspector: FC = () => {
+  const { setOptions, goBack } = useNavigation();
+  useLayoutEffect(() => {
+    setOptions({
+      headerLeft: () => (
+        <HeaderContainer headerPosition="left" onPress={() => goBack()}>
+          <Back height={18} width={18} />
+        </HeaderContainer>
+      ),
+    });
+  });
   return (
     <AddInspectorContainer>
       <FieldContainer>

@@ -16,7 +16,12 @@ export const RootStackRoutes: FC = () => {
           component={TractorList}
         />
         <Stack.Screen
-          options={{ headerLeft: () => null }}
+          options={{
+            headerLeft: () => null,
+            headerTitle: "New Entry",
+            headerTintColor: "#fff",
+            headerStyle: { backgroundColor: "#1157B9" },
+          }}
           name="AddInspection"
           component={AddInspector}
         />

@@ -1,7 +1,5 @@
 import { useNavigation } from "@react-navigation/native";
 import React, { FC, useLayoutEffect } from "react";
-import { Button } from "../../components/Button";
-import { Input } from "../../components/Input";
 import { Text } from "../../components/Text";
 import { IconContainer as HeaderContainer } from "../../navigation/styles";
 import {
