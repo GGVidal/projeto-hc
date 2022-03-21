@@ -27,6 +27,7 @@ export const InspectionList: FC = () => {
           </Text>
         </Button>
       </ButtonsContainer>
+      {/* Aqui deveria ter uma flatlist que ia renderizar os items fazendo um map e retornando o inspection item, mas não tive tempo :D */}
       <InspectionItem />
       <InspectionItem />
       <InspectionItem />

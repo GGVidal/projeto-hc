@@ -12,4 +12,5 @@ export const ButtonsContainer = styled.View`
   margin-top: 24px;
   align-items: center;
   justify-content: center;
+  margin-bottom: 31px;
 `;

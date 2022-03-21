@@ -33,6 +33,7 @@ export const TractorList: FC = () => {
             (7 itens)
           </Text>
         </SubHeaderContainer>
+        {/* aqui deveria ter uma flatlist pra renderizar item por item no component tractorlistitem, mas não tive tempo :D */}
         <TractorListItem onPress={() => navigate("TractorDetails")} />
         <TractorListItem onPress={() => navigate("TractorDetails")} />
       </SafeAreaView>
