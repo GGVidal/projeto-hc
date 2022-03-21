@@ -49,3 +49,9 @@ export const StatusContainer = styled.View`
   flex-direction: row;
   margin-top: 6px;
 `;
+
+export const ScreenContainer = styled.View`
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 13px;
+`;
