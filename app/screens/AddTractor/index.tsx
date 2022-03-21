@@ -1,14 +1,27 @@
-import React, { FC } from "react";
+import { useNavigation } from "@react-navigation/native";
+import React, { FC, useLayoutEffect } from "react";
 import { Button } from "../../components/Button";
 import { Input } from "../../components/Input";
 import { Text } from "../../components/Text";
+import { IconContainer } from "../../navigation/styles";
 import {
   AddTractorContainer,
   ButtonsContainer,
   FieldContainer,
 } from "./styles";
+import Close from "../../assets/close.svg";
 
 export const AddTractor: FC = () => {
+  const { setOptions, goBack } = useNavigation();
+  useLayoutEffect(() => {
+    setOptions({
+      headerRight: () => (
+        <IconContainer onPress={() => goBack()}>
+          <Close height={18} width={18} />
+        </IconContainer>
+      ),
+    });
+  });
   return (
     <AddTractorContainer>
       <FieldContainer>

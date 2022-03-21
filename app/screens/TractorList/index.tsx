@@ -1,13 +1,16 @@
 import React, { FC } from "react";
-import { SafeAreaView, View } from "react-native";
+import { SafeAreaView } from "react-native";
 import { FAB } from "../../components/FAB";
 import { Text } from "../../components/Text";
 import { TractorListHeader } from "../../components/TractorListHeader";
 import { TractorListItem } from "../../components/TractorListItem";
 import { SubHeaderContainer } from "./styles";
 import Add from "../../assets/add.svg";
+import { useNavigation } from "@react-navigation/native";
+import { RootStack } from "../../navigation/routes.types";
 
 export const TractorList: FC = () => {
+  const navigate = useNavigation();
   return (
     <>
       <SafeAreaView>
@@ -33,7 +36,7 @@ export const TractorList: FC = () => {
         <TractorListItem />
         <TractorListItem />
       </SafeAreaView>
-      <FAB>
+      <FAB onPress={() => navigate.navigate("CreateTractor")}>
         <Add width={18} height={18} />
       </FAB>
     </>
