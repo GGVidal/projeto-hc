@@ -16,6 +16,7 @@ import {
 import Back from "../../assets/arrow_left.svg";
 import Tractor from "../../assets/Trator.svg";
 import { TractorInspectorContainer } from "./components/TractorInspectorContainer";
+import { InspectionList } from "./components/InspectionList";
 
 export const TractorDetails: FC = () => {
   const { setOptions, goBack } = useNavigation();
@@ -68,6 +69,7 @@ export const TractorDetails: FC = () => {
           </DescriptionContainer>
         </TractorDetail>
         <TractorInspectorContainer />
+        <InspectionList />
       </ScreenContainer>
     </>
   );
