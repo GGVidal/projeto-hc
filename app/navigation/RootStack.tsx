@@ -1,8 +1,9 @@
 import React, { FC } from "react";
 import { createStackNavigator } from "@react-navigation/stack";
-import { NavigationContainer, useNavigation } from "@react-navigation/native";
+import { NavigationContainer } from "@react-navigation/native";
 import { AddInspector, TractorList, AddTractor } from "../screens";
 import { RootStack } from "./routes.types";
+import { TractorDetails } from "../screens/TractorDetails";
 const Stack = createStackNavigator<RootStack>();
 
 export const RootStackRoutes: FC = () => {
@@ -28,6 +29,15 @@ export const RootStackRoutes: FC = () => {
           }}
           name="CreateTractor"
           component={AddTractor}
+        />
+        <Stack.Screen
+          options={{
+            headerTitle: "Details",
+            headerTintColor: "#fff",
+            headerStyle: { backgroundColor: "#1157B9" },
+          }}
+          name="TractorDetails"
+          component={TractorDetails}
         />
       </Stack.Navigator>
     </NavigationContainer>

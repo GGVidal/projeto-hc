@@ -16,7 +16,7 @@ export const AddTractor: FC = () => {
   useLayoutEffect(() => {
     setOptions({
       headerRight: () => (
-        <IconContainer onPress={() => goBack()}>
+        <IconContainer headerPosition="right" onPress={() => goBack()}>
           <Close height={18} width={18} />
         </IconContainer>
       ),

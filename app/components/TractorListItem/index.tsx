@@ -10,12 +10,12 @@ import {
 } from "./styles";
 import Trator from "../../assets/Trator.svg";
 import { Text } from "../Text";
-import { View } from "react-native";
+import { TractorListItemProps } from "./types";
 
-export const TractorListItem: FC = () => {
+export const TractorListItem: FC<TractorListItemProps> = ({ onPress }) => {
   return (
     <>
-      <Container>
+      <Container onPress={onPress}>
         <ListItemContainer>
           <IconContainer>
             <StyledIcon>

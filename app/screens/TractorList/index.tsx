@@ -10,7 +10,7 @@ import { useNavigation } from "@react-navigation/native";
 import { RootStack } from "../../navigation/routes.types";
 
 export const TractorList: FC = () => {
-  const navigate = useNavigation();
+  const { navigate } = useNavigation();
   return (
     <>
       <SafeAreaView>
@@ -33,10 +33,10 @@ export const TractorList: FC = () => {
             (7 itens)
           </Text>
         </SubHeaderContainer>
-        <TractorListItem />
-        <TractorListItem />
+        <TractorListItem onPress={() => navigate("TractorDetails")} />
+        <TractorListItem onPress={() => navigate("TractorDetails")} />
       </SafeAreaView>
-      <FAB onPress={() => navigate.navigate("CreateTractor")}>
+      <FAB onPress={() => navigate("CreateTractor")}>
         <Add width={18} height={18} />
       </FAB>
     </>
